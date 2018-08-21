@@ -53,6 +53,7 @@ public class BallController : MonoBehaviour {
             Time.timeScale = 0;
             LevelUiManager.instace.highScore.text ="High Score: " + PlayerPrefs.GetInt("HighScore").ToString();
             LevelUiManager.instace.panel.SetActive(true);
+            UnityAds.instance.ShowAds();
 
 
         }
